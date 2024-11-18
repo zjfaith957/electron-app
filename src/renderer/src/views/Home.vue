@@ -2,6 +2,12 @@
   <div>
     <h3>这是一个寂寞的天</h3>
     <el-button type="success" @click="login">登录</el-button>
+
+    <el-icon :size="size" :color="color">
+      <Edit />
+    </el-icon>
+    <!-- 或者独立使用它，不从父级获取属性 -->
+    <Edit />
     <!-- <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
       <el-tab-pane label="User" name="first">User</el-tab-pane>
       <el-tab-pane label="Config" name="second">Config</el-tab-pane>
